@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 export default function Footer() {
   return (
     <footer className="bg-secondary py-8">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex justify-center space-x-6 mb-4">
           <a href="https://github.com/OsbornNyakaru" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <FaGithub className="text-2xl" />

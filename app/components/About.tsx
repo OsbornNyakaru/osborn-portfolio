@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function About() {
   return (
     <section id="about" className="py-20 bg-secondary/10">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
         <Card>
           <CardHeader>

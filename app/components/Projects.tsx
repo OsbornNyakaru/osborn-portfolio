@@ -33,9 +33,9 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-secondary/10">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <Card key={project.title} className="overflow-hidden">
               <Image src={project.image || "/placeholder.svg"} alt={project.title} width={300} height={200} className="w-full h-48 object-cover" />
