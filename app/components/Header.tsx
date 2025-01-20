@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { ModeToggle } from './ModeToggle'
 import { MobileMenu } from './MobileMenu'
 
 export default function Header() {
@@ -30,7 +29,6 @@ export default function Header() {
             <li><Link href="#contact" className="hover:text-primary transition-colors">Contact</Link></li>
           </ul>
           <div className='flex items-center space-x-4'>
-            <ModeToggle />
             <MobileMenu />
           </div>
         </div>
