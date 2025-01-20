@@ -12,7 +12,7 @@ export default function About() {
           </CardHeader>
           <CardContent>
             <p className="mb-4">
-              With over 5 years of experience in web development, I've honed my skills in creating efficient, scalable, and user-friendly applications. My expertise lies in Next.js, React, TypeScript, and MongoDB, allowing me to build full-stack solutions that meet and exceed client expectations.
+              With over 3 years of experience in web development, I've honed my skills in creating efficient, scalable, and user-friendly applications. My expertise lies in Next.js, React, TypeScript, and MongoDB, allowing me to build full-stack solutions that meet and exceed client expectations.
             </p>
             <p>
               I'm passionate about staying up-to-date with the latest industry trends and continuously improving my skills. When I'm not coding, you can find me contributing to open-source projects, writing technical blog posts, or mentoring aspiring developers.

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce solution built with Next.js, MongoDB, and Stripe integration.',
+    description: 'A full-stack e-commerce solution built with Next.js, MongoDB, Clerk authentication, and Stripe integration.',
     image: '/port-1.PNG?height=200&width=300',
     technologies: ['Next.js', 'MongoDB', 'Stripe', 'TailwindCSS', 'Clerk'],
     demoUrl: 'https://next-js-14-e-commerce-store-vtbt.vercel.app/',
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'Arifa Healthcare Platform',
-    description: 'A healthcare management system for with admin panel using Next.js, Typescript, TailwindCSS, and MongoDB.',
+    description: 'A healthcare management system for health facilities with admin panel using Next.js, Typescript, TailwindCSS, and MongoDB.',
     image: '/port-3.PNG?height=200&width=300',
     technologies: ['Next.js', 'Javascipt', 'Typescript', 'MongoDB', 'TailwindCSS'],
     demoUrl: 'https://carepulse-afya.vercel.app/',

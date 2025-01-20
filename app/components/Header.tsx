@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { ModeToggle } from './ModeToggle'
-import { <MobileMenu></MobileMenu> } from "./MobileMenu"
+import { MobileMenu } from './MobileMenu'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
