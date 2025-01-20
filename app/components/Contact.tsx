@@ -26,6 +26,20 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
+    const showToast = (message: string, type: "success" | "error") => {
+      if (type === "success") {
+        toast.success(message, {
+          duration: 5000,
+          position: "bottom-center",
+        })
+      } else {
+        toast.error(message, {
+          duration: 5000,
+          position: "bottom-center",
+        })
+      }
+    }
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -36,7 +50,7 @@ export default function Contact() {
       })
 
       if (response.ok) {
-        toast.success("Message sent! Thank you for your message. I'll get back to you soon.")
+        showToast("Message sent! Thank you for your message. I'll get back to you soon.", "success")
         setFormData({ name: "", email: "", message: "" })
       } else {
         const errorData = await response.json()
@@ -44,7 +58,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error("Error sending message:", error)
-      toast.error(error instanceof Error ? error.message : "Failed to send message. Please try again later.")
+      showToast(error instanceof Error ? error.message : "Failed to send message. Please try again later.", "error")
     } finally {
       setIsSubmitting(false)
     }

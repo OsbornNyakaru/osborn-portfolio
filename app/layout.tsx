@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Osborn Nyakaru - Full Stack Developer",
   description:
-    "Personal portfolio showcasing expertise in Next.js, MongoDB, TailwindCSS, TypeScript, React, and Strapi",
+    "Personal portfolio showcasing expertise in Next.js, MongoDB, TailwindCSS, TypeScript, and React",
 }
 
 export default function RootLayout({
@@ -21,7 +21,28 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
-          <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
+          <Toaster
+            position="bottom-center"
+            reverseOrder={false}
+            gutter={8}
+            containerClassName=""
+            containerStyle={{}}
+            toastOptions={{
+              className: "",
+              duration: 5000,
+              style: {
+                background: "#363636",
+                color: "#fff",
+              },
+              success: {
+                duration: 3000,
+                theme: {
+                  primary: "green",
+                  secondary: "black",
+                },
+              },
+            }}
+          />
         </ThemeProvider>
       </body>
     </html>
