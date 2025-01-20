@@ -9,6 +9,7 @@ const projects = [
     description: 'A full-stack e-commerce solution built with Next.js, MongoDB, Clerk authentication, and Stripe integration.',
     image: '/port-1.PNG?height=200&width=300',
     technologies: ['Next.js', 'MongoDB', 'Stripe', 'TailwindCSS', 'Clerk'],
+    demoUrl: 'https://ecommerce-platform-osborn-nyakarus-projects.vercel.app/',
     githubUrl: 'https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store.git',
   },
   {
