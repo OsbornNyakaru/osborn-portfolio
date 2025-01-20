@@ -9,7 +9,6 @@ const projects = [
     description: 'A full-stack e-commerce solution built with Next.js, MongoDB, Clerk authentication, and Stripe integration.',
     image: '/port-1.PNG?height=200&width=300',
     technologies: ['Next.js', 'MongoDB', 'Stripe', 'TailwindCSS', 'Clerk'],
-    demoUrl: 'https://next-js-14-e-commerce-store-vtbt.vercel.app/',
     githubUrl: 'https://github.com/OsbornNyakaru/NextJS-14-E-commerce-Store.git',
   },
   {
@@ -18,7 +17,7 @@ const projects = [
     image: '/port-2.PNG?height=200&width=300',
     technologies: ['Next.js', 'TypeScript', 'MongoDB', 'TailwindCSS'],
     demoUrl: 'https://project-arifa-avko.vercel.app/',
-    githubUrl: 'https://github.com/yourusername/task-management-app',
+    githubUrl: 'https://github.com/OsbornNyakaru/project_arifa.git',
   },
   {
     title: 'Arifa Healthcare Platform',
