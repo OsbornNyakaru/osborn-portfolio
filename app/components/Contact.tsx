@@ -1,20 +1,19 @@
 "use client"
 
-import { useState } from 'react'
+import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { useToast } from "@/components/ui/use-toast"
+import toast from "react-hot-toast"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const { toast } = useToast()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -28,29 +27,24 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
 
       if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        })
-        setFormData({ name: '', email: '', message: '' })
+        toast.success("Message sent! Thank you for your message. I'll get back to you soon.")
+        setFormData({ name: "", email: "", message: "" })
       } else {
-        throw new Error('Failed to send message')
+        const errorData = await response.json()
+        throw new Error(errorData.error || "Failed to send message")
       }
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again later.",
-        variant: "destructive",
-      })
+      console.error("Error sending message:", error)
+      toast.error(error instanceof Error ? error.message : "Failed to send message. Please try again later.")
     } finally {
       setIsSubmitting(false)
     }
@@ -101,7 +95,7 @@ export default function Contact() {
                 </div>
               </div>
               <Button type="submit" className="w-full mt-4" disabled={isSubmitting}>
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </CardContent>
