@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
           <Toaster
             position="bottom-center"
@@ -43,7 +42,6 @@ export default function RootLayout({
               },
             }}
           />
-        </ThemeProvider>
       </body>
     </html>
   )
