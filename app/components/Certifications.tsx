@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const certifications = [
   {
     name: 'Computer Science',
-    issuer: 'Chuka University',
+    issuer: 'Undergraduate degree',
     date: 'Currently pursuing till 2027',
   },
   {
@@ -14,7 +14,7 @@ const certifications = [
   {
     name: 'Software Engineering Certification',
     issuer: 'MODCOM Institute of Technology',
-    date: 'August 2021',
+    date: 'August 2022',
   },
 ]
 
@@ -28,7 +28,7 @@ export default function Certifications() {
             <Card key={cert.name}>
               <CardHeader>
                 <CardTitle>{cert.name}</CardTitle>
-                <CardDescription>Issued by: {cert.issuer}</CardDescription>
+                <CardDescription>{cert.issuer}</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Date: {cert.date}</p>

@@ -1,10 +1,10 @@
-import { FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa'
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMongodb, SiStrapi } from 'react-icons/si'
+import { FaNodeJs, FaDatabase } from 'react-icons/fa'
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMongodb, SiStrapi, SiPython } from 'react-icons/si'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
 const skills = [
-  { name: 'React', icon: FaReact, level: 90 },
+  { name: 'Python', icon: SiPython, level: 90 },
   { name: 'Next.js', icon: SiNextdotjs, level: 85 },
   { name: 'TypeScript', icon: SiTypescript, level: 80 },
   { name: 'TailwindCSS', icon: SiTailwindcss, level: 85 },
