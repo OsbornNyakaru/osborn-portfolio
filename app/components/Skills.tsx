@@ -1,16 +1,18 @@
 import { FaNodeJs, FaDatabase } from 'react-icons/fa'
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMongodb, SiStrapi, SiPython } from 'react-icons/si'
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMongodb, SiStrapi, SiPython, SiJavascript, SiCplusplus, SiMysql, SiPrisma, SiSanity } from 'react-icons/si'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
 const skills = [
   { name: 'Python', icon: SiPython, level: 90 },
-  { name: 'Next.js', icon: SiNextdotjs, level: 85 },
-  { name: 'TypeScript', icon: SiTypescript, level: 80 },
+  { name: 'React/Next.js', icon: SiNextdotjs, level: 85 },
+  { name: 'TypeScript/Javascript', icon: SiTypescript, SiJavascript, level: 80 },
   { name: 'TailwindCSS', icon: SiTailwindcss, level: 85 },
-  { name: 'MongoDB', icon: SiMongodb, level: 75 },
   { name: 'Node.js', icon: FaNodeJs, level: 80 },
-  { name: 'Strapi', icon: SiStrapi, level: 60 },
+  { name: 'SQL/MySQL', icon: SiMysql, level: 80 },
+  { name: 'Prisma', icon: SiPrisma, level: 85 },
+  { name: 'Sanity', icon: SiSanity, level: 80 },
+  { name: 'MongoDB', icon: SiMongodb, level: 75 },
 ]
 
 export default function Skills() {
