@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress"
 const skills = [
   { name: 'Python', icon: SiPython, level: 90 },
   { name: 'React/Next.js', icon: SiNextdotjs, level: 85 },
-  { name: 'TypeScript/Javascript', icon: SiTypescript, SiJavascript, level: 80 },
+  { name: 'TypeScript/Javascript', icon: SiTypescript, icon2: SiJavascript, level: 80 },
   { name: 'TailwindCSS', icon: SiTailwindcss, level: 85 },
   { name: 'Node.js', icon: FaNodeJs, level: 80 },
   { name: 'SQL/MySQL', icon: SiMysql, level: 80 },
