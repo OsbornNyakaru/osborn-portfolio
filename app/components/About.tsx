@@ -12,7 +12,13 @@ export default function About() {
           </CardHeader>
           <CardContent>
             <p className="mb-4">
-              With over 3 years of experience in web development, I've honed my skills in creating efficient, scalable, and user-friendly applications. My expertise lies in Python, Next.js, React, TypeScript, and MongoDB, allowing me to build full-stack solutions that meet and exceed client expectations.
+            I am a Full-Stack Developer, AI Enthusiast, and Entrepreneur passionate about building scalable and impactful digital solutions. With expertise in Next.js, React, TypeScript, TailwindCSS, and Prisma, I develop dynamic front-end interfaces and efficient back-end systems powered by MongoDB, MySQL, and Django.
+
+My projects focus on solving real-world problems, from e-commerce platforms and sales analytics tools to AI-driven prompt-sharing systems and waste management solutions. I am actively exploring Machine Learning and AI through DataCamp, with hands-on experience integrating OpenAI APIs and Microsoft Fabric tools for data-driven applications.
+
+Beyond development, I am a problem-solver and strategist, currently building a financial management platform for local restaurants, a car hire database system, and an AI-powered agricultural solution for a hackathon project. My vision is to bridge technology with entrepreneurship, driving innovation in my community through well-designed, user-centric platforms.
+
+Let's connect and build the future together! 🚀
             </p>
             <p>
               I'm passionate about staying up-to-date with the latest industry trends and continuously improving my skills. When I'm not coding, you can find me contributing to open-source projects, writing technical blog posts, or mentoring aspiring developers.
